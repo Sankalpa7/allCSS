@@ -14,6 +14,15 @@
         .box {
             font-size: 3em;
             /* multiply by 3 of parent font size is em*/
+            /* rem is the same multiply by 3 but with the context of html file */
+            /* vw is the unit which check according to viewport width */
+            /* vh is the unit which check according to viewport height */
+        }
+
+        .box2 {
+            background-color: red;
+            height: 23vh;
+            width: 33vw;
         }
     </style>
 </head>
@@ -22,6 +31,9 @@
     <!--Learning about the sizes in CSS--->
     <div class="container">
         <p>This is a paragraph</p>
+        <div class="box2">
+            <h1>This is heading</h1>
+        </div>
     </div>
     <div class="box">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus?
