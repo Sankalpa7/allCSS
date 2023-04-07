@@ -14,11 +14,6 @@
         }
 
 
-
-        img:hover {
-            width: 60px;
-        }
-
         img {
             height: 20vh;
             width: 20vh;
@@ -32,9 +27,15 @@
 <body>
     <div class="container">
         <div class="box">
-            <img src="./mike-alonzo-Xe7za0JtTeM-unsplash.jpg" alt="">
+            <img id="myImage" src="./mike-alonzo-Xe7za0JtTeM-unsplash.jpg" alt="">
         </div>
+        <button id="btn">Click Me</button>
     </div>
 </body>
+<script>
+    btn.addEventListener("click", () => {
+        myImage.style.width = "70vh";
+    })
+</script>
 
 </html>
