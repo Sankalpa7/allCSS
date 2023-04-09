@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice 8</title>
     <style>
+        .progress {
+            background-color: red;
+            height: 5px;
+            animation: load 2s ease-in-out 1;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -20,6 +26,20 @@
         main {
             height: 886px;
             background-color: blue;
+        }
+
+        @keyframes load {
+            0% {
+                width: 0;
+            }
+
+            50% {
+                width: 30vw;
+            }
+
+            100% {
+                width: 100vw
+            }
         }
     </style>
 </head>
