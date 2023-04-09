@@ -26,6 +26,12 @@
         main {
             height: 886px;
             background-color: blue;
+
+        }
+
+        img {
+            animation: rotate 1s ease-in infinite;
+
         }
 
         @keyframes load {
@@ -41,6 +47,17 @@
                 width: 100vw
             }
         }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
     </style>
 </head>
 
@@ -50,7 +67,7 @@
     </div>
     <header></header>
     <main>
-
+        <img src="./boat.jpg" alt="" width="122px">
     </main>
 </body>
 
